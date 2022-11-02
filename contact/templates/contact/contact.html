@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Contact US</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="{% static 'css/pogo-slider.min.css' %}" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="inner_page" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    {% include 'header.html' %}
+	<!-- section -->
+	
+	<section class="inner_banner">
+	  <div class="container">
+	      <div class="row">
+		      <div class="col-12">
+			     <div class="full">
+				     <h3>Contact us</h3>
+				 </div>
+			  </div>
+		  </div>
+	  </div>
+	</section>
+	
+	<!-- end section -->
+   
+	<!-- section -->
+    <div class="section layout_padding contact_section" style="background:#f6f6f6;">
+        <div class="container">
+               <div class="row">
+                 <div class="col-lg-8 col-md-8 col-sm-12">
+				    <div class="full float-right_img">
+                        <img src="{% static 'images/img10.png' %}" alt="#">
+                    </div>
+                 </div>
+				 <div class="col-lg-4 col-md-4 col-sm-12">
+				    <div class="contact_form">
+					    <form action="contact.html">
+						   <fieldset>
+						       <div class="full field">
+							      <input type="text" placeholder="Your Name" name="your name" />
+							   </div>
+							   <div class="full field">
+							      <input type="email" placeholder="Email Address" name="Email" />
+							   </div>
+							   <div class="full field">
+							      <input type="phn" placeholder="Phone Number" name="Phone number" />
+							   </div>
+							   <div class="full field">
+							      <textarea placeholder="Massage"></textarea>
+							   </div>
+							   <div class="full field">
+							      <div class="center"><button>Send</button></div>
+							   </div>
+						   </fieldset>
+						</form>
+					</div>
+                 </div>
+               </div>			  
+           </div>
+        </div>
+	<!-- end section -->
+   {% include 'footer.html'%}
