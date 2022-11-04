@@ -88,7 +88,23 @@ input {
 	margin: 8px 0;
 	width: 100%;
 }
+.alert{
+	position:relative;
+	padding:.75rem 1.25rem;
+	margin-bottom:1rem;
+	border:1px solid transparent;
+	border-radius:.25rem
+}
 
+.alert-danger{
+		color:#721c24;
+		background-color:#f8d7da;
+		border-color:#f5c6cb
+}
+
+.alert-danger hr{
+	border-top-color:#f1b0b7
+}
 .container {
 	background-color: #fff;
 	border-radius: 10px;

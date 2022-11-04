@@ -4,6 +4,7 @@ from django.views import defaults
 from . import views
 
 urlpatterns = [
-    path('',views.index,name="Dashboard"),
-    path('dashboard/',views.index,name="Dashboard"),
+    path('',views.dashboard,name="Dashboard"),
+    path('pages/forms/',views.basic_element,name="Basic ELement"),
+    path('logout/',views.logout),
 ]
