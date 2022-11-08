@@ -12,8 +12,14 @@ def dashboard(request):
         return HttpResponseRedirect('/')
 
 def basic_element(request):
-    return render(request,'pages/forms/basic_elements.html')
-
+    if request.session.get('_redirect_admin'):
+        return render(request,'pages/forms/basic_elements.html')
+    else:
+        return HttpResponseRedirect('/')
 def logout(request):
     request.session.flush()
     return HttpResponseRedirect('/')
+
+def passing_url(request):
+    if request.session.get('_redirect_admin'):
+        return HttpResponseRedirect('/admin')
