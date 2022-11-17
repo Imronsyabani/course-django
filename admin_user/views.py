@@ -16,9 +16,13 @@ def basic_element(request):
         return render(request,'pages/forms/basic_elements.html')
     else:
         return HttpResponseRedirect('/')
+
 def logout(request):
     request.session.flush()
     return HttpResponseRedirect('/')
+
+def course_form(request):
+    return render(request,'pages/forms/course_form.html')
 
 def passing_url(request):
     if request.session.get('_redirect_admin'):
