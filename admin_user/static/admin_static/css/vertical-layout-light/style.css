@@ -10646,7 +10646,7 @@ progress {
 .tt-hint {
   display: block;
   width: 100%;
-  padding: 0.875rem 1.375rem;
+  padding: 0 1.375rem;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1;
@@ -10714,7 +10714,7 @@ progress {
 .form-control::file-selector-button, .asColorPicker-input::file-selector-button, .dataTables_wrapper select::file-selector-button, .select2-container--default .select2-selection--single::file-selector-button, .select2-container--default .select2-selection--single .select2-search__field::file-selector-button, .typeahead::file-selector-button,
 .tt-query::file-selector-button,
 .tt-hint::file-selector-button {
-  padding: 0.875rem 1.375rem;
+  padding: 0 1.375rem; /* 0.875rem 1.375rem */
   margin: -0.875rem -1.375rem;
   margin-inline-end: 1.375rem;
   color: #212529;
@@ -10745,7 +10745,7 @@ progress {
 .form-control::-webkit-file-upload-button, .asColorPicker-input::-webkit-file-upload-button, .dataTables_wrapper select::-webkit-file-upload-button, .select2-container--default .select2-selection--single::-webkit-file-upload-button, .select2-container--default .select2-selection--single .select2-search__field::-webkit-file-upload-button, .typeahead::-webkit-file-upload-button,
 .tt-query::-webkit-file-upload-button,
 .tt-hint::-webkit-file-upload-button {
-  padding: 0.875rem 1.375rem;
+  padding: 0 1.375rem; /* 0.875rem 1.375rem */
   margin: -0.875rem -1.375rem;
   margin-inline-end: 1.375rem;
   color: #212529;

@@ -11,7 +11,7 @@ def dashboard(request):
     else:
         return HttpResponseRedirect('/')
 
-def basic_element(request):
+def basic_element(request,*context):
     if request.session.get('_redirect_admin'):
         return render(request,'pages/forms/basic_elements.html')
     else:
@@ -21,7 +21,7 @@ def logout(request):
     request.session.flush()
     return HttpResponseRedirect('/')
 
-def course_form(request):
+def course_form(request,*context):
     return render(request,'pages/forms/course_form.html')
 
 def passing_url(request):
