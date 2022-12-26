@@ -126,7 +126,7 @@ input {
 
 .sign-in-container {
 	left: 0;
-	width: 50%;
+	width: 100%;
 	z-index: 2;
 }
 
@@ -136,9 +136,8 @@ input {
 
 .sign-up-container {
 	left: 0;
-	width: 50%;
-	opacity: 0;
-	z-index: 1;
+	width: 100%;
+	z-index: 2;
 }
 
 .container.right-panel-active .sign-up-container {

@@ -7,38 +7,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Registration Page</title>
     <link rel="stylesheet" href="{% static 'css/login-style.css' %}">
     <link rel="stylesheet" href="{% static 'assets/fontawesome/css/all.css' %}">
-
 </head>
 <body>
-    <!-- <h2>Sign in Form</h2> -->
+    <h2>Sign up Form</h2>
     <div class="container" id="container">
-        <div class="form-container sign-in-container">
+        <div class="form-container sign-up-container">
             <form action="" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
-                <h1>Sign In</h1>
+                <h1>Create Account</h1>
                 {{ form }}
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <span>or use your account</span>
+                <span>or use your email for registration</span>
                 {% if warning_auth %}
                     <span style="color:red;font-style: italic;font-size: 14px;">
-                        Email Or Password Is Wrong
+                        {% if username_error %}
+                            <p>{{ username_error }}</p>
+                        {% else %}    
+                            <p>{{ email_error }}</p>
+                        {% endif %}
                     </span>
                 {% endif %}
+                <input type="text" placeholder="Name" name="username"/>
                 <input type="email" placeholder="Email" name="email"/>
-                <input type="password" name="password" placeholder="Password" />
-                doesnt have account? <a href="register/" style="color:#FF4B2B;">Sign Up</a>
-                <a href="#">Forgot your password?</a>
-                <button type="submit">Sign In</button>
+                <input type="password" placeholder="Password" name="password"/>
+                <button style="margin-bottom: 15px;">Sign Up</button>
+                Have Already Account? <a href="/login" style="color:#FF4B2B;">Sign In</a>
             </form>
         </div>
-    </div>
+    </div> 
 <script src="{% static 'js/login-js.js' %}"></script>
 </body>
 </html>
